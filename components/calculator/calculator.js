@@ -9,9 +9,9 @@ const Calculator = () => {
   const [taxRate, setTaxRate] = useState(30); // Initial tax rate (as a percentage)
   const [currency, setCurrency] = useState("$"); // Default currency
 
-  const formatCurrency = (amount, currency) => {
+  const formatCurrency = (amount, userCurrency) => {
     let cur = "USD";
-    switch (currency) {
+    switch (userCurrency) {
     case "€":
         cur = "EUR";
         break;
