@@ -19,9 +19,8 @@ function WealthChart({ data }) {
   };
 
   return (
-    <div className="chart">
       <Line data={data} options={options} />
-    </div>
+    
   );
 }
 

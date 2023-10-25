@@ -1,6 +1,10 @@
+h1 {
+  text-align: center;
+}
+
 /* Header.css */
 header {
-    background-color: #333;
+    background-color: #fff;
     color: #fff;
     padding: 20px 0;
     margin-bottom: 30px;
@@ -15,11 +19,12 @@ header {
   
   nav li {
     margin: 0 20px;
+    
   }
   
   nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     transition: color 0.3s;
   }
@@ -28,23 +33,63 @@ header {
     color: #ff5733; /* Change this color for the hover effect */
   }
   
+
+
 /* calculator.css */
+.tool-wrapper {
+  width:100%
+}
 
-.tool-container {
-width:85%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin: 0 auto;
-
+.tool {
+  display: flex; /* Make it a flex container */
+  flex-direction: row; /* Arrange its children horizontally */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 100%;
 }
 
 .calculator {
-width:50%;
-
+  align-items: center;
+  border: 1px solid black;
+  min-width: 45%;
+  max-width: 50%;
+  padding: 20px; /* Add some padding to separate the calculator and chart */
 }
 
-.chart{
-max-width: 50%;
-background-color: black;
+.chart {
+  border: 1px solid black;
+  align-items: center;
+  height: 100%;
+  min-width: 45%;
+  max-width: 50%;
+  background-color: white;
+  padding: 20px; /* Add some padding to separate the calculator and chart */
+}
+
+.calculator h2 {
+  text-align: center;
+  
+}
+
+.input-field {
+  width: 100%;
+  align-items: center;
+}
+
+.input-field label {
+  display: block; /* Display the label as a block-level element */
+  margin-bottom: 8px; /* Add some spacing between the label and input */
+  font-size: large;
+}
+
+.input-field input {
+  display: block; /* Display the input as a block-level element */
+  width: 100%; /* Make the input expand to the full width of its container */
+  border:none;
+  border-bottom: 1px solid black; /* Add a bottom border */
+  transition: border 0.15s ease-in-out 0s;
+}
+
+.result p {
+  text-align: center;
 }

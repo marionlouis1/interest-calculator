@@ -18,7 +18,9 @@ export default function Home() {
       </div>
       <main>
         <h1>Compound Interest Calculator</h1>
+        <div className="tool-wrapper">
           <Calculator />
+        </div>
       </main>
     </>
   );

@@ -53,8 +53,9 @@ function Calculator() {
 
     const formattedTotalContributions = formatCurrency(totalContributions, currency);
     const formattedFinalAmount = formatCurrency(wealth, currency);
+    const formattedInterests = formatCurrency(wealth-totalContributions, currency)
 
-    return [formattedFinalAmount, formattedTotalContributions];
+    return [formattedFinalAmount, formattedTotalContributions, formattedInterests];
   };
 
   
@@ -105,73 +106,77 @@ function Calculator() {
   }, [currentWealth, allocation, isMonthly, yearsToGrow, interestRate]);
 
   return (
-    <div className='toolContainer'>
-    <div className="calculator">
-      <h2>Project your wealth in years</h2>
-      <div className="input-field">
-        <label>Current Wealth:</label>
-        <input
-          type="number"
-          value={currentWealth}
-          onChange={(e) => setCurrentWealth(parseFloat(e.target.value))}
-        />
+    <div className='tool'>
+      <div className="calculator">
+        <h2>Project your wealth in years</h2>
+        <div className="input-field">
+          <label>Current Wealth:</label>
+          <input
+            type="number"
+            value={currentWealth}
+            onChange={(e) => setCurrentWealth(parseFloat(e.target.value))}
+          />
       </div>
-      <div className="input-field">
-        <label>Allocation Value:</label>
-        <input
-          type="number"
-          value={allocation}
-          onChange={(e) => setAllocation(parseFloat(e.target.value))}
-        />
-        <label>
+        <div className="input-field">
+          <label>Allocation Value:</label>
+          <input
+            type="number"
+            value={allocation}
+            onChange={(e) => setAllocation(parseFloat(e.target.value))}
+          />
+          <label> Monthly Allocation </label>
           <input
             type="checkbox"
             checked={isMonthly}
             onChange={() => setIsMonthly(!isMonthly)}
           />
-          Monthly Allocation
-        </label>
-      </div>
-      <div className="input-field">
-        <label>Years to Grow:</label>
-        <input
-          type="number"
-          value={yearsToGrow}
-          onChange={(e) => setYearsToGrow(parseInt(e.target.value))}
-        />
-      </div>
-      <div className="input-field">
-        <label>Interest Rate (%):</label>
-        <input
-          type="number"
-          value={interestRate}
-          onChange={(e) => setInterestRate(parseFloat(e.target.value))}
-        />
-      </div>
-      <div className="input-field">
-        <label>Tax Rate (%):</label>
-        <input
-          type="number"
-          value={taxRate}
-          onChange={(e) => setTaxRate(parseFloat(e.target.value))}
-        />
-      </div>
-      <div className="input-field">
-        <label>Currency:</label>
-        <select value={currency} onChange={(e) => setCurrency(e.target.value)}>
-          <option value="£">£ (GBP)</option>
-          <option value="$">$ (USD)</option>
-          <option value="€">€ (EUR)</option>
-        </select>
-      </div>
-      <div className="result">
-        <p>Total Contributions : {calculateFinalAmount()[1]}</p>
-        <p>Final Amount : {calculateFinalAmount()[0]}</p>
-      </div>
+          
+        </div>
+        <div className="input-field">
+          <label>Years to Grow:</label>
+          <input
+            type="number"
+            value={yearsToGrow}
+            onChange={(e) => setYearsToGrow(parseInt(e.target.value))}
+          />
+        </div>
+        <div className="input-field">
+          <label>Interest Rate (%):</label>
+          <input
+            type="number"
+            value={interestRate}
+            onChange={(e) => setInterestRate(parseFloat(e.target.value))}
+          />
+        </div>
+        <div className="input-field">
+          <label>Tax Rate (%):</label>
+          <input
+            type="number"
+            value={taxRate}
+            onChange={(e) => setTaxRate(parseFloat(e.target.value))}
+          />
+        </div>
+        <div className="input-field">
+          <label>Currency:</label>
+          <select value={currency} onChange={(e) => setCurrency(e.target.value)}>
+            <option value="£">£ (GBP)</option>
+            <option value="$">$ (USD)</option>
+            <option value="€">€ (EUR)</option>
+          </select>
+        </div>
+        
 
-    </div>
+      </div>
+      <div className="chart">
           {/* Conditionally render WealthChart, contains it's own div named 'chart'*/}
           {chartData && <WealthChart data={chartData} />}
+        </div>
+        <div className="result">
+          <p>
+            Your final wealth will be <b>{calculateFinalAmount[0]}</b> after {yearsToGrow} years. It will be composed of 
+            <b>{calculateFinalAmount[1]}</b> in contributions and <b>{calculateFinalAmount()[2] }</b> in interest.
+          </p>
+        </div>
     </div>
   );
 }
