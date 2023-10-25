@@ -2,25 +2,42 @@ import { useState } from 'react';
 
 const Calculator = () => {
   const [currentWealth, setCurrentWealth] = useState(10000); // Initial current wealth
-  const [allocation, setAllocation] = useState(0.08); // Initial allocation rate
+  const [allocation, setAllocation] = useState(1000); // Initial allocation value
   const [isMonthly, setIsMonthly] = useState(true); // Allocation frequency
-  const [yearsToGrow, setYearsToGrow] = useState(10); // Initial number of years
-  const [interestRate, setInterestRate] = useState(0.06); // Initial interest rate
-  const [taxRate, setTaxRate] = useState(0.15); // Initial tax rate
+  const [yearsToGrow, setYearsToGrow] = useState(20); // Initial number of years
+  const [interestRate, setInterestRate] = useState(9); // Initial interest rate (as a percentage)
+  const [taxRate, setTaxRate] = useState(30); // Initial tax rate (as a percentage)
+  const [currency, setCurrency] = useState("$"); // Default currency
+
+  const formatCurrency = (amount) => {
+    switch (currency) {
+      case '£':
+        return `£ ${amount.toFixed(2)}`;
+      case '$':
+        return `$ ${amount.toFixed(2)}`;
+      case '€':
+        return `${amount.toFixed(2)} €`;
+      default:
+        return amount.toFixed(2);
+    }
+  };
 
   // Calculate the final amount
   const calculateFinalAmount = () => {
     const frequency = isMonthly ? 12 : 1;
-    const growthRate = 1 + (interestRate / frequency);
-    const totalContributions = currentWealth * (allocation / frequency) * yearsToGrow;
+    const growthRate = 1 + (interestRate / 100 / frequency);
+    const totalContributions = allocation * yearsToGrow;
 
     let wealth = currentWealth;
     for (let year = 0; year < yearsToGrow; year++) {
-      wealth += (wealth * (allocation / frequency)) + (wealth * (interestRate / frequency));
-      wealth -= (wealth * (taxRate / frequency));
+      wealth += allocation;
+      wealth *= growthRate;
     }
 
-    return wealth - totalContributions;
+    // Calculate tax at the end
+    const taxAmount = (wealth - currentWealth - totalContributions) * (taxRate / 100);
+
+    return formatCurrency(wealth);
   };
 
   return (
@@ -31,7 +48,7 @@ const Calculator = () => {
         <input type="number" value={currentWealth} onChange={(e) => setCurrentWealth(parseFloat(e.target.value))} />
       </div>
       <div className="input-field">
-        <label>Allocation Rate:</label>
+        <label>Allocation Value:</label>
         <input type="number" value={allocation} onChange={(e) => setAllocation(parseFloat(e.target.value))} />
         <label>
           <input type="checkbox" checked={isMonthly} onChange={() => setIsMonthly(!isMonthly)} />
@@ -43,15 +60,23 @@ const Calculator = () => {
         <input type="number" value={yearsToGrow} onChange={(e) => setYearsToGrow(parseInt(e.target.value))} />
       </div>
       <div className="input-field">
-        <label>Interest Rate:</label>
+        <label>Interest Rate (%):</label>
         <input type="number" value={interestRate} onChange={(e) => setInterestRate(parseFloat(e.target.value))} />
       </div>
       <div className="input-field">
-        <label>Tax Rate:</label>
+        <label>Tax Rate (%):</label>
         <input type="number" value={taxRate} onChange={(e) => setTaxRate(parseFloat(e.target.value))} />
       </div>
+      <div className="input-field">
+        <label>Currency:</label>
+        <select value={currency} onChange={(e) => setCurrency(e.target.value)}>
+          <option value="£">£ (GBP)</option>
+          <option value="$">$ (USD)</option>
+          <option value="€">€ (EUR)</option>
+        </select>
+      </div>
       <div className="result">
-        <p>Final Amount: {calculateFinalAmount().toFixed(2)}</p>
+        <p>Final Amount : {calculateFinalAmount()}</p>
       </div>
     </div>
   );
