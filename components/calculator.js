@@ -25,8 +25,8 @@ const Calculator = () => {
   // Calculate the final amount
   const calculateFinalAmount = () => {
     const frequency = isMonthly ? 12 : 1;
-    const growthRate = 1 + (interestRate / 100 / frequency);
-    const totalContributions = allocation * yearsToGrow;
+    const growthRate = 1 + (interestRate / 100);
+    const totalContributions = allocation * yearsToGrow* frequency;
 
     let wealth = currentWealth;
     for (let year = 0; year < yearsToGrow; year++) {
@@ -37,7 +37,7 @@ const Calculator = () => {
     // Calculate tax at the end
     const taxAmount = (wealth - currentWealth - totalContributions) * (taxRate / 100);
 
-    return formatCurrency(wealth);
+    return [formatCurrency(wealth), formatCurrency(totalContributions)];
   };
 
   return (
@@ -76,7 +76,8 @@ const Calculator = () => {
         </select>
       </div>
       <div className="result">
-        <p>Final Amount : {calculateFinalAmount()}</p>
+        <p>Total Contributions : {calculateFinalAmount()[1]}</p>
+        <p>Final Amount : {calculateFinalAmount()[0]}</p>
       </div>
     </div>
   );
