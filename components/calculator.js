@@ -9,17 +9,30 @@ const Calculator = () => {
   const [taxRate, setTaxRate] = useState(30); // Initial tax rate (as a percentage)
   const [currency, setCurrency] = useState("$"); // Default currency
 
-  const formatCurrency = (amount) => {
+  const formatCurrency = (amount, currency) => {
+    let cur = "USD";
     switch (currency) {
-      case '£':
-        return `£ ${amount.toFixed(0)}`;
-      case '$':
-        return `$ ${amount.toFixed(0)}`;
-      case '€':
-        return `${amount.toFixed(0)} €`;
-      default:
-        return amount.toFixed(0);
+    case "€":
+        cur = "EUR";
+        break;
+    case "£":
+        cur = "GBP";
+        break;
+    case "$":
+        cur = "USD";
+        break;
+    default:
+        cur = "USD";
+        break;
     }
+
+    const options = {
+      style: 'currency',
+      currency: cur, // This is the selected currency symbol
+      maximumFractionDigits: 0, // Minimum number of decimal places
+    };
+  
+    return amount.toLocaleString(undefined,options);
   };
 
   // Calculate the final amount
@@ -37,7 +50,7 @@ const Calculator = () => {
     // Calculate tax at the end
     const taxAmount = (wealth - currentWealth - totalContributions) * (taxRate / 100);
 
-    return [formatCurrency(wealth), formatCurrency(totalContributions)];
+    return [formatCurrency(wealth, currency), formatCurrency(totalContributions, currency)];
   };
 
   return (
