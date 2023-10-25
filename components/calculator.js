@@ -12,13 +12,13 @@ const Calculator = () => {
   const formatCurrency = (amount) => {
     switch (currency) {
       case '£':
-        return `£ ${amount.toFixed(2)}`;
+        return `£ ${amount.toFixed(0)}`;
       case '$':
-        return `$ ${amount.toFixed(2)}`;
+        return `$ ${amount.toFixed(0)}`;
       case '€':
-        return `${amount.toFixed(2)} €`;
+        return `${amount.toFixed(0)} €`;
       default:
-        return amount.toFixed(2);
+        return amount.toFixed(0);
     }
   };
 
@@ -30,7 +30,7 @@ const Calculator = () => {
 
     let wealth = currentWealth;
     for (let year = 0; year < yearsToGrow; year++) {
-      wealth += allocation;
+      wealth += allocation*frequency;
       wealth *= growthRate;
     }
 
