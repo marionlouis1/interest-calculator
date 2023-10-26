@@ -22,7 +22,8 @@ export default function Blog() {
         <main>
             <h1>The Hidden Treasure of Compound Interest: Start Investing Today</h1>
                 <p className="blog-content">
-                In a world filled with instant gratification and quick fixes</p>
+                In a world filled with instant gratification and quick fixes, investing may seem like a daunting and distant concept. 
+                </p>
 
         </main>
         </>
