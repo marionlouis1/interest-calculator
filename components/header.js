@@ -1,8 +1,16 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
 
 const Header = () => {
   return (
     <header>
+      <div className="logo">
+        <p href="/">
+          📈  Compound Interest Calculator
+        </p>
+      </div>
+      <div className = "navbar">
       <nav>
         <ul>
           <li>
@@ -17,11 +25,12 @@ const Header = () => {
           </li>
           <li>
             <Link href="/contact">
-              Contact
+              Blog
             </Link>
           </li>
         </ul>
       </nav>
+      </div>
     </header>
   );
 };

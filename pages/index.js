@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import Calculator from '../components/calculator/calculator';
 import Header from '../components/header';
+
 
 export default function Home() {
   
@@ -9,9 +11,10 @@ export default function Home() {
       <Head>
         <title>Compound Interest Calculator</title>
         <meta name="description" content="Compound Interest Calculator" />
-        <link rel="icon" href="/favicon.ico" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6256879694795014"
-     crossorigin="anonymous"></script>
+        <link rel="icon" href="../public/logo.png" />
+        {/* Google Adsense */}
+        */ <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6256879694795014" 
+     crossorigin="anonymous"/>
       </Head>
       <div>
         <Header />
