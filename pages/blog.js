@@ -38,6 +38,14 @@ export default function Blog() {
                     Over time, this coumpounding effect become more pronounced.
                     By year 10, you will have $1,628.89, and by year 30, your initial $1,000 will have grown to an impressive $4,321.94.
                 </p>
+                <p className="blog-content">
+                    The key to harnessing the full power of coumpound interest is to start investing early.
+                    The longer your money has to grow, the more significant the impact of coumpounding is.
+                    It is a race against time, and those who begin early will have a significant advantage.
+                    Investing even small amounts regularly can lead to substantial wealth in the long run.
+                    Whether you are investing in stocks, bonds, real estate, or other assets, the principles of coumpound interest remain the same.
+                </p>
+                
                 
                 
 
