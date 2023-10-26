@@ -173,8 +173,8 @@ function Calculator() {
         </div>
         <div className="result">
           <p>
-            Your final wealth will be <b>{calculateFinalAmount[0]}</b> after {yearsToGrow} years. It will be composed of 
-            <b>{calculateFinalAmount[1]}</b> in contributions and <b>{calculateFinalAmount()[2] }</b> in interest.
+            Your final wealth will be <b>{calculateFinalAmount()[0]}</b> after {yearsToGrow} years. It will be composed of 
+            <b>{calculateFinalAmount()[1]}</b> in contributions and <b>{calculateFinalAmount()[2] }</b> in interest.
           </p>
         </div>
     </div>
