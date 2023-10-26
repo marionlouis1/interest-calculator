@@ -5,7 +5,7 @@ import Head from "next/head";
 import Header from "../components/header";
 import GifEmbed from "@/components/gifEmbed";
 
-export default function About() {
+export default function Blog() {
     return (
         <>
         <Head>
