@@ -26,7 +26,7 @@ export default function Blog() {
                     However, this is crucial to understand that time and patience are powerful allies in wealth accumulation. The magic of coumpound interest, often attributed to the great physicist Albert Einstein, lies at the heart of why you should start investing now.
                 </p>
                 <p className="blog-content">
-                    Albert Einstein once referred to compound interest as the "eighth wonder of the world." 
+                    Albert Einstein once referred to compound interest as the `eighth wonder of the world.`
                     While he was best known for his groundbreaking work in theoretical physics, his insights into the financial world are equally profound.
                     Compound interest is the process by which your money earns interest on the interest it has previously earned. 
                     This is a snowball effect that can turn small, consistent investments into substantial wealth over time.
