@@ -45,10 +45,12 @@ export default function Blog() {
                     Investing even small amounts regularly can lead to substantial wealth in the long run.
                     Whether you are investing in stocks, bonds, real estate, or other assets, the principles of coumpound interest remain the same.
                 </p>
-                
-                
-                
-
+                <p className ="blog-content">
+                    In conclusion, Albert Einstein`s wisdom extends beyond the realms of science.
+                    Coumpound interest is a financial force that canwork in your favor.
+                    As you consider your financial future, remember that time is your most valuable asset.
+                    Don`t wait; start investing today to unleash the power of coumpound interest and secure your financial well-being.
+                </p>
         </main>
         </>
     )
