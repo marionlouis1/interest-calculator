@@ -32,12 +32,13 @@ export default function Blog() {
                     This is a snowball effect that can turn small, consistent investments into substantial wealth over time.
                 </p>
                 <p className="blog-content">
-                    Imagine you invest $1,000 in a savings account with an annual interest rate of 5%. 
-                    In the first year, you will earn $50 in interest, bringing your total to $1,050. 
-                    However, in the second year, you won't earn just another $50; you will earn 5% interest on the entire $1,050, resulting in $52.50 in interest. 
-                    Over time, this compounding effect becomes more pronounced. 
+                    Imagine you invest $1,000 in a savings account with an annual interest rate of 5%.
+                    In the first year, you will earn $50 in interest, bringing your total to $1,050.
+                    However, in the second year, you wwill not earn just another $50; you will earn 5% interest rate on the entire $1,050, resulting in $52,50 in interest.
+                    Over time, this coumpounding effect become more pronounced.
                     By year 10, you will have $1,628.89, and by year 30, your initial $1,000 will have grown to an impressive $4,321.94.
                 </p>
+                
                 
 
         </main>
