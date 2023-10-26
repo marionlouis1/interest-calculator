@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "../components/header";
 
-export default function Article() {
+export default function Blog() {
     return (
         <>
         <Head>
