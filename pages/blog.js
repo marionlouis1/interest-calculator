@@ -7,9 +7,7 @@ export default function Blog() {
         <>
         <Head>
             <title>The magic of coumpound interests</title>
-            <meta name="Explore the Financial Magic of Compound Interest - Unveiling the Investment Secrets for a Prosperous Future. 
-            Discover why Albert Einstein hailed compound interest as the 'eighth wonder of the world' and learn how it can supercharge your financial goals.
-             Dive into the fascinating world of investments, wealth growth, and financial wisdom. Start your journey towards a secure and prosperous future today." content="Learn about the power of compound interest." />
+            
             <link rel="icon" href="../public/logo.png" />
         </Head>
         <div>
