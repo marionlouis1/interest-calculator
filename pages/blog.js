@@ -22,8 +22,8 @@ export default function Blog() {
         <main>
             <h1>The Hidden Treasure of Compound Interest: Start Investing Today</h1>
                 <p className="blog-content">
-                In a world filled with instant gratification and quick fixes, investing may seem like a daunting and distant concept.
-                However, it's crucial to understand that time and patience are powerful allies in wealth accumulation. The magic of compound interest, often attributed to the great physicist Albert Einstein, lies at the heart of why you should start investing now.
+                    In a world filled with instant gratification and quick fixes, investing may seem like a daunting and distant concept
+                    However, it's crucial to understand that time and patience are powerful allies in wealth accumulation. The magic of coumpound interest, often attributed to the great physicist Albert Einstein, lies at the heart of why you should start investing now.
                 </p>
 
         </main>
