@@ -125,6 +125,7 @@ font-size: 17px;
 .input-field {
   width: 100%;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .input-field label {
