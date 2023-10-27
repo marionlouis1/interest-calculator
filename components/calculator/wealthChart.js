@@ -10,7 +10,7 @@ function WealthChart({ data }) {
   const options = {
     scales: {
       x: {
-        type: 'year', // Ensure that the x-axis scale is set to 'linear'
+        type: 'linear', // Ensure that the x-axis scale is set to 'linear'
         // transform the 'x' value to a string
         ticks: {
           callback: function (value, index, values) {
