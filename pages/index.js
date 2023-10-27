@@ -16,6 +16,10 @@ export default function Home() {
         {/* Google Adsense */}
         */ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6256879694795014" 
      crossorigin="anonymous"/>
+        {/* Google Fonts */}
+        <style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap');
+</style>
       </Head>
       <div>
         <Header />
