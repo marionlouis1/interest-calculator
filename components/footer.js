@@ -1,19 +1,12 @@
 import React from "react";
 
-class Footer extends React.Component {
-  render() {
-    return (
+const Footer = () => {
+  return (
       <div className="box">
-        <h1
-          style={{
-            color: "grey",
-            textAlign: "center",
-            marginTop: "10px",
-            marginBottom: "20px",
-          }}
+        <h3
         >
-          A Computer Science Portal for Geeks!
-        </h1>
+          Learn more about us!
+        </h3>
         <div className="footer-container">
           <div className="row">
             <div className="column">
@@ -85,7 +78,6 @@ class Footer extends React.Component {
         </div>
       </div>
     );
-  }
-}
+  };
 
 export default Footer;

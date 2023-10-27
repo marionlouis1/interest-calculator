@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Script from 'next/script';
 import Calculator from '../components/calculator/calculator';
 import Header from '../components/header';
+import Footer from '../components/footer';
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
           <Calculator />
         </div>
       </main>
+      <Footer/>
     </>
   );
 }
