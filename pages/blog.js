@@ -3,7 +3,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/header";
-import GifEmbed from "@/components/gifEmbed";
+import Footer from "../components/footer";
 
 export default function Blog() {
     return (
@@ -52,6 +52,8 @@ export default function Blog() {
                     Don`t wait; start investing today to unleash the power of coumpound interest and secure your financial well-being.
                 </p>
         </main>
+        <Footer />
+
         </>
     )
 }
