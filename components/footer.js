@@ -32,23 +32,11 @@ const Footer = () => {
               <a href="#" className="footer-link">
                 Coding
               </a>
-              <a href="#" className="footer-link">
-                Teaching
-              </a>
             </div>
             <div className="column">
               <p className="heading">Contact Me</p>
               <a href="#" className="footer-link">
-                Uttar Pradesh
-              </a>
-              <a href="#" className="footer-link">
-                Ahemdabad
-              </a>
-              <a href="#" className="footer-link">
-                Indore
-              </a>
-              <a href="#" className="footer-link">
-                Mumbai
+                My journey as a indie hacker
               </a>
             </div>
             <div className="column">
