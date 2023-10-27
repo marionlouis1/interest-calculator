@@ -139,6 +139,7 @@ header {
 .chart {
 
   align-items: center;
+  margin-top: 20px;
   height: 100%;
   min-width: 45%;
   max-width: 50%;

@@ -10,7 +10,15 @@ function WealthChart({ data }) {
   const options = {
     scales: {
       x: {
-        type: 'linear', // Ensure that the x-axis scale is set to 'linear'
+        type: 'year', // Ensure that the x-axis scale is set to 'linear'
+        // transform the 'x' value to a string
+        ticks: {
+          callback: function (value, index, values) {
+            return value.toString();
+          },
+          //Start at the first x value only
+          min: data.labels[0],
+        },
       },
       y: {
         beginAtZero: false,
