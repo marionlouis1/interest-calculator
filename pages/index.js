@@ -14,8 +14,8 @@ export default function Home() {
         <meta name="description" content="Compound Interest Calculator" />
         <link rel="icon" href="../public/logo.png" />
         {/* Google Adsense */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6256879694795014" 
-     crossorigin="anonymous"/>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6256879694795014"
+     crossorigin="anonymous"></script>
       </Head>
       <div>
         <Header />
