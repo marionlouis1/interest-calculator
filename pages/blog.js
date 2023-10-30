@@ -15,6 +15,9 @@ export default function Blog() {
              Dive into the fascinating world of investments, wealth growth, and financial wisdom. Start your journey towards a secure and prosperous future today." 
              content="Learn about the power of compound interest." />
             <link rel="icon" href="../public/logo.png" />
+
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6256879694795014"
+     crossorigin="anonymous"></script>
         </Head>
         <div>
             <Header />
