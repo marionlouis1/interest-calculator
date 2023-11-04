@@ -46,7 +46,7 @@ export default function Blog() {
                     The longer your money has to grow, the more significant the impact of coumpounding is.
                     It is a race against time, and those who begin early will have a significant advantage.
                     Investing even small amounts regularly can lead to substantial wealth in the long run.
-                    Whether you are investing in stocks, bonds, real estate, or other assets, the principles of coumpound interest remain the same.
+                    Whether you are investing in stocks, bonds, crypto, real estate, or other assets, the principles of coumpound interest remain the same.
                 </p>
                 <p className ="blog-content">
                     In conclusion, Albert Einstein`s wisdom extends beyond the realms of science.
