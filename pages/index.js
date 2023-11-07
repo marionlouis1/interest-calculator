@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Script from 'next/script';
 import Calculator from '../components/calculator/calculator';
 import Header from '../components/header';
 import Footer from '../components/footer';
