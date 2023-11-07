@@ -20,7 +20,7 @@ const Header = () => {
           </li>
           <li>
             <Link href="/blog">
-              Bloc
+              Blog
             </Link>
           </li>
         </ul>
