@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Calculator from '../components/calculator/calculator';
 import Header from '../components/header';
-import { Analytics } from '@vercel/analytics/React';
 import Footer from '../components/footer';
 
 
@@ -25,7 +24,6 @@ export default function Home() {
         <div className="tool-wrapper">
           <Calculator />
         </div>
-        <Analytics/>
       </main>
       <Footer/>
     </>
