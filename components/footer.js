@@ -5,10 +5,10 @@ const Footer = () => {
       <div className="container">
         <div className="footer-div">
         <p className="footer-content">
-          Powered by Next.js
+          Powered by <u>Next.js</u>
         </p>
         <p className="footer-content">
-          Created By LM
+          Created By <u>LM</u>.
         </p>
         </div>
       </div>
