@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../globals.css";
 import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head'
 
