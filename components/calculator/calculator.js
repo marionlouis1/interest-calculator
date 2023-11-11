@@ -174,7 +174,7 @@ function Calculator() {
           </select>
         </div>
       </div>
-      <div className="chart bg-white w-full md:w-1/2 p-6">
+      <div className="chart bg-white w-full md:w-1/2 md:min-h-full p-6">
         {chartData && <WealthChart data={chartData} />}
       </div>
       <div className="result w-full p-6">

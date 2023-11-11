@@ -10,7 +10,7 @@ const Header = () => {
       </div>
       <div className="navbar">
         <nav>
-          <ul className="flex space-x-6 pr-2/12">
+          <ul className="flex space-x-6 pr-2/12 items-center justify-end">
             <li>
               <Link href="/" className="text-black font-bold hover:text-blue-500">Home</Link>
             </li>
