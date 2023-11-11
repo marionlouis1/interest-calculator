@@ -1,19 +1,21 @@
+import Link from 'next/link';
+
 const Header = () => {
   return (
     <header className="bg-white text-black py-5 flex items-center justify-between">
       <div className="logo text-xl pl-4">
-        <a href="/">
+        <Link href="/">
           📈 Compound Interest Calculator
-        </a>
+        </Link>
       </div>
       <div className="navbar">
         <nav>
           <ul className="flex space-x-6 pr-2/12">
             <li>
-              <a href="/" className="text-black font-bold hover:text-blue-500">Home</a>
+              <Link href="/" className="text-black font-bold hover:text-blue-500">Home</Link>
             </li>
             <li>
-              <a href="/blog" className="text-black font-bold hover:text-blue-500">Blog</a>
+              <Link href="/blog" className="text-black font-bold hover:text-blue-500">Blog</Link>
             </li>
           </ul>
         </nav>
