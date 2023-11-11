@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -7,9 +8,9 @@ const Footer = () => {
         <p className="text-lg">
           Powered by <u>Next.js</u>
         </p>
-        <p className="text-lg">
+        <Link href="https://twitter.com/louismrn0" className="text-lg">
           Created By <u>LM</u>.
-        </p>
+        </Link>
       </div>
     </div>
   );
