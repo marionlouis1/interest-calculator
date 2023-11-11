@@ -113,7 +113,7 @@ function Calculator() {
             type="number"
             value={currentWealth}
             onChange={(e) => setCurrentWealth(parseFloat(e.target.value))}
-            className="w-4/5 border-b-2 focus:outline-none focus:border-blue-500"
+            className="w-full border-b-2 focus:outline-none focus:border-blue-500"
           />
         </div>
         <div className="input-field text mb-6">
