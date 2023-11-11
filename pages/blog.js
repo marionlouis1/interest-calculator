@@ -14,7 +14,7 @@ export default function Blog() {
             Discover why Albert Einstein hailed compound interest as the 'eighth wonder of the world' and learn how it can supercharge your financial goals.
              Dive into the fascinating world of investments, wealth growth, and financial wisdom. Start your journey towards a secure and prosperous future today." 
              content="Learn about the power of compound interest." />
-            <link rel="icon" href="../public/logo.png" />
+            <link rel="icon" href="../public/favicon.ico" />
 
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6256879694795014"
      crossorigin="anonymous"></script>
