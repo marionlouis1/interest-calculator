@@ -20,7 +20,7 @@ export default function Home() {
         <Header />
       </div>
       <main>
-        <h1 className="text-center">Compound Interest Calculator</h1>
+        <h1 className=" bg-white text-black text-center">Compound Interest Calculator</h1>
         <div className="tool-wrapper">
           <Calculator />
         </div>

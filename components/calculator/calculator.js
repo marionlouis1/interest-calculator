@@ -113,7 +113,7 @@ function Calculator() {
             type="number"
             value={currentWealth}
             onChange={(e) => setCurrentWealth(parseFloat(e.target.value))}
-            className="w-full border-b-2 focus:outline-none focus:border-blue-500"
+            className="bg-white w-full border-b-2 focus:outline-none focus:border-blue-500"
           />
         </div>
         <div className="input-field text mb-6">
@@ -122,7 +122,7 @@ function Calculator() {
             type="number"
             value={allocation}
             onChange={(e) => setAllocation(parseFloat(e.target.value))}
-            className="w-full border-b-2 focus:outline-none focus:border-blue-500"
+            className="bg-white w-full border-b-2 focus:outline-none focus:border-blue-500"
           />
           <label className="block mt-2">
             Monthly Allocation
@@ -140,7 +140,7 @@ function Calculator() {
             type="number"
             value={yearsToGrow}
             onChange={(e) => setYearsToGrow(parseInt(e.target.value))}
-            className="w-full border-b-2 focus:outline-none focus:border-blue-500"
+            className="bg-white w-full border-b-2 focus:outline-none focus:border-blue-500"
           />
         </div>
         <div className="input-field mb-6">
@@ -149,7 +149,7 @@ function Calculator() {
             type="number"
             value={interestRate}
             onChange={(e) => setInterestRate(parseFloat(e.target.value))}
-            className="w-full border-b-2 focus:outline-none focus:border-blue-500"
+            className="bg-white w-full border-b-2 focus:outline-none focus:border-blue-500"
           />
         </div>
         <div className="input-field mb-6">
@@ -158,7 +158,7 @@ function Calculator() {
             type="number"
             value={taxRate}
             onChange={(e) => setTaxRate(parseFloat(e.target.value))}
-            className="w-full border-b-2 focus:outline-none focus:border-blue-500"
+            className="bg-white w-full border-b-2 focus:outline-none focus:border-blue-500"
           />
         </div>
         <div className="input-field mb-6">
@@ -166,7 +166,7 @@ function Calculator() {
           <select
             value={currency}
             onChange={(e) => setCurrency(e.target.value)}
-            className="w-full border-b-2 focus:outline-none focus:border-blue-500"
+            className="bg-white w-full border-b-2 focus:outline-none focus:border-blue-500"
           >
             <option value="£">£ (GBP)</option>
             <option value="$">$ (USD)</option>
