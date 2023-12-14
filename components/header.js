@@ -17,6 +17,9 @@ const Header = () => {
             <li>
               <Link href="/blog" className="text-black font-bold hover:text-blue-500">Blog</Link>
             </li>
+            <li>
+              <Link href="/stocks" className="text-black font-bold hover:text-blue-500">Calculator for the stock market</Link>
+            </li>
           </ul>
         </nav>
       </div>
