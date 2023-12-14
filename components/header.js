@@ -18,6 +18,9 @@ const Header = () => {
               <Link href="/stocks" className="text-black font-bold hover:text-blue-500">Calculator for the stock market</Link>
             </li>
             <li>
+              <Link href="/bonds" className="text-black font-bold hover:text-blue-500">Calculator for bonds</Link>
+            </li>
+            <li>
               <Link href="/blog" className="text-black font-bold hover:text-blue-500">Blog</Link>
             </li>
           </ul>
