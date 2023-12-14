@@ -22,7 +22,7 @@ export default function Blog() {
             <Header />
         </div>
         <main className="bg-white text-black ">
-            <h1>The Hidden Treasure of Compound Interest: Start Investing Today</h1>
+            <h1 className="font-bold">The Hidden Treasure of Compound Interest: Start Investing Today</h1>
             <div className="text-black ">
 
                 <p className="text-justify m-4 ">
