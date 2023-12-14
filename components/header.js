@@ -37,7 +37,7 @@ const Header = () => {
           📈 Compound Interest Calculator
         </Link>
       </div>
-      <div className="navbar">
+      <div className="navbar w-full">
         <nav>
           <ul className="flex space-x-6 pr-2/12 items-center justify-end">
             <li>
