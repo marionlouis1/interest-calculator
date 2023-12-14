@@ -168,7 +168,7 @@ function Calculator() {
             onChange={(e) => setCurrency(e.target.value)}
             className="bg-white w-full border-b-2 focus:outline-none focus:border-blue-500"
           >
-            <option value="£">£ (GBP)</option>
+            <option type="radio" value="£">£ (GBP)</option>
             <option value="$">$ (USD)</option>
             <option value="€">€ (EUR)</option>
           </select>

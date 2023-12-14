@@ -49,7 +49,7 @@ export default function Blog() {
                 </p>
                 <p className ="blog-content">
                     In conclusion, Albert Einstein`s wisdom extends beyond the realms of science.
-                    Coumpound interest is a financial force that canwork in your favor.
+                    Coumpound interest is a financial force that canwork in your favor and that you should consider twice.
                     As you consider your financial future, remember that time is your most valuable asset.
                     Don`t wait, start investing today to unleash the power of coumpound interest and secure your financial well-being.
                 </p>
