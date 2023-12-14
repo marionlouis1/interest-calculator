@@ -12,9 +12,10 @@ export default function Home() {
       <Head>
         <title>Compound Interest Calculator</title>
         <meta name="description" content="Compound Interest Calculator for stock market" />
-        {/* Google Adsense */}
+        {/* Google Adsense 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6256879694795014"
      crossorigin="anonymous"></script>
+     */}
       </Head>
       <div>
         <Header />
