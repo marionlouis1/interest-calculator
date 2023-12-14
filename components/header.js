@@ -29,6 +29,7 @@ const Header = () => {
       draggable
       pauseOnHover
       theme="light"
+    
       />
 
     <header className="bg-white text-black py-5 flex items-center justify-between">
