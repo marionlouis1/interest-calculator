@@ -27,7 +27,7 @@ export default function Blog() {
 
                 <p className="text-justify m-4 ">
                     In a world filled with instant gratification and quick fixes, investing may seem like a daunting and distant concept.
-                    However, this is crucial to understand that time and patience are powerful allies in wealth accumulation. The magic of coumpound interest, often attributed to the great physicist Albert Einstein, lies at the heart of why you should start investing now.
+                    However, this is crucial to understand that time and patience are powerful allies in wealth accumulation. The magic of coumpound interest, often attributed to the great physicist Albert Einstein, lies at the heart of why you should start investing now !
                 </p>
                 <p className="text-justify m-4">
                     Albert Einstein once referred to compound interest as the `eighth wonder of the world.`
